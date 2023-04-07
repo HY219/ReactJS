@@ -7,11 +7,17 @@ const Wrapper = styled.div`
 //animation 사용
 //keyframes string을 import 해준다.
 const rotationAnimation = keyframes`
-  from{
+  0%{
     transform: rotate(0deg);
+    border-radius: 0px;
   }
-  to{
+  50%{
     transform: rotate(360deg);
+    border-radius: 100px;
+  }
+  100%{
+    transform: rotate(0deg);
+    border-radius: 0px;
   }
 `;
 
