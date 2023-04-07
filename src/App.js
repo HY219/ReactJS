@@ -4,20 +4,19 @@ const Father = styled.div`
   display: flex;
 `;
 
-const Btn = styled.button`
-  color: white;
+//Input으로 전달될 모든 속성을 가진 오브젝트를 담을 수 있다.
+const Input = styled.input.attrs({ required: true })`
   background-color: tomato;
-  border: 0;
-  border-radius: 15px;
 `;
 
 function App() {
   return (
-    <Father>
-      <Btn>Log in</Btn>
-      <Btn as="a" href="/">
-        Log in
-      </Btn>
+    <Father as="header">
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
     </Father>
   );
 }
